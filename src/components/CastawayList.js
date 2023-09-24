@@ -56,9 +56,9 @@ export default function CastawayList(props) {
                                     <tr>
                                         <th>Rank</th>
                                         <th>Castaway</th>
-                                        <th>Age</th>
-                                        <th>Current Residence</th>
-                                        <th>Occupation</th>
+                                        <th className="aux-info">Age</th>
+                                        <th className="aux-info">Current Residence</th>
+                                        <th className="aux-info">Occupation</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -69,9 +69,9 @@ export default function CastawayList(props) {
                                                 <tr ref={provided.innerRef} {...provided.draggableProps} className={snapshot.isDragging ? 'isDragging-' + snapshot.isDragging : 'bg-' + castaway.tribeColor} key={index} >
                                                     <td>{index + 1}</td>
                                                     <td><a href={castaway.pageURL} title={`${castaway.name}'s CBS page`} target="_blank" rel="noreferrer"><img src={castaway.iconURL} alt={`Portrait of ${castaway.name}`} /> <span>{castaway.name}</span></a></td>
-                                                    <td>{castaway.age}</td>
-                                                    <td>{castaway.currentResidence}</td>
-                                                    <td>{castaway.occupation}</td>
+                                                    <td className="aux-info">{castaway.age}</td>
+                                                    <td className="aux-info">{castaway.currentResidence}</td>
+                                                    <td className="aux-info">{castaway.occupation}</td>
                                                     <td {...provided.dragHandleProps}><BsGripVertical /></td>
                                                 </tr>
                                             )}

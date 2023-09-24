@@ -61,6 +61,12 @@
     width: 4rem;
 }
 
+.aux-info {
+    @media (max-width: 750px) {
+        display: none;
+    }
+}
+
 .isDragging-true {
     background-color: snow;
 }
