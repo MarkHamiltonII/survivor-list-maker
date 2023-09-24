@@ -42,21 +42,21 @@ for row in rows:
                         info = td.find('small').text.split(", ")
                         castaway['name'] = link.get('title')
                         castaway['age'] = info[0]
-                        castaway['currentResidence'] = info[1] + info[2][0:2]
+                        castaway['currentResidence'] = info[1] +', ' + info[2][0:2]
                         castaway['occupation'] = info[2][2:]
                         castaway['pageURL'] = f'{base_url}{link.get("href")}'
                     else:
-                        castaway['tribeColor'] = td.get('style')[11:18]
+                        castaway['tribeColor'] = td.get('style')[12:18]
                         castaway['tribe'] = getTribeFromColor(castaway['tribeColor'])
                         img = link.find('img')
                         if img.get('data-src'):
-                            castaway['iconURL'] = img.get('data-src')
+                            castaway['iconURL'] = img.get('data-src').split('/revision')[0]
                         else:
-                            castaway['iconURL'] = img.get('src')
+                            castaway['iconURL'] = img.get('src').split('/revision')[0]
     if castaway:
         castaway['id'] = index
         index += 1
         castaways.append(castaway)
 
-with open("season_45_castaways.json", 'w') as outfile:
+with open("src/data/season_45_castaways.json", 'w') as outfile:
     json.dump(castaways, outfile, indent=4)

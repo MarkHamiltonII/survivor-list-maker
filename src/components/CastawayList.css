@@ -1,0 +1,127 @@
+.castaway-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.draggable-table {
+    border: 2px solid black;
+    overflow-x: auto;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    @media (min-width: 640px) {
+        border-radius: 0.5rem;
+    }
+}
+
+.castaway-table {
+    font-size: medium;
+    text-align: left;
+    table-layout: auto;
+    transition: all;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    border-collapse: collapse;
+}
+
+.castaway-table th {
+    background-color: black;
+    color: white;
+    padding: .75rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: large;
+}
+
+.castaway-table tr:hover {
+    background-color: snow;
+}
+
+.castaway-table td {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.castaway-table a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.castaway-table img {
+    width: 4rem;
+}
+
+.isDragging-true {
+    background-color: snow;
+}
+
+.isDraggingOver-true {
+    background-color: lightgray;
+}
+
+.bg-ff4148 {
+    background-color: #ff4148;
+}
+
+.bg-4caae6 {
+    background-color: #4caae6;
+}
+
+.bg-fcdd31 {
+    background-color: #fcdd31;
+}
+
+.copy-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.copy-button {
+    padding: 1rem 2rem;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 2px #999;
+    transition: all 50ms;
+}
+
+.copy-button:hover {
+    background-color: #ab67ea;
+}
+
+.copy-button:active{
+    background-color: #ab67ea;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.copy-button:not(:active) + .copy-span {
+    animation: fade-entry 5s linear;
+}
+
+@keyframes fade-entry {
+    0% {
+        color: white;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        color: white;
+    }
+    
+}
