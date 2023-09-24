@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/survivor-list-maker/static/css/main.b5711d53.css",
+    "main.js": "/survivor-list-maker/static/js/main.297c1178.js",
+    "index.html": "/survivor-list-maker/index.html",
+    "main.b5711d53.css.map": "/survivor-list-maker/static/css/main.b5711d53.css.map",
+    "main.297c1178.js.map": "/survivor-list-maker/static/js/main.297c1178.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5711d53.css",
+    "static/js/main.297c1178.js"
+  ]
+}
