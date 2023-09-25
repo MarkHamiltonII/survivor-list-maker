@@ -1,5 +1,5 @@
 .castaway-list-container {
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,8 @@
 }
 
 .draggable-table {
-    display: block;
+    max-width: 100vw;
+    overflow-x: hidden;
     border: 2px solid black;
     position: relative;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -60,8 +61,8 @@
     width: 4rem;
 }
 
-.aux-info {
-    @media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
+    .aux-info {
         display: none;
     }
 }
@@ -108,13 +109,13 @@
     background-color: #ab67ea;
 }
 
-.copy-button:active{
+.copy-button:active {
     background-color: #ab67ea;
     transform: translateY(2px);
     box-shadow: none;
 }
 
-.copy-button:not(:active) + .copy-span {
+.copy-button:not(:active)+.copy-span {
     animation: fade-entry 5s linear;
 }
 
@@ -122,11 +123,13 @@
     0% {
         color: white;
     }
+
     50% {
         color: green;
     }
+
     100% {
         color: white;
     }
-    
+
 }
