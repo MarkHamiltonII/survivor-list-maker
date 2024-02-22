@@ -1,0 +1,200 @@
+[
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/3/34/S46_ben_t.png",
+        "name": "Ben Katzman",
+        "age": "31",
+        "currentResidence": "Miami, FL",
+        "occupation": "Musician",
+        "pageURL": "https://survivor.fandom.com/wiki/Ben_Katzman",
+        "id": 1
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/4d/S46_bhanu_t.png",
+        "name": "Bhanu Gopal",
+        "age": "41",
+        "currentResidence": "Acton, MA",
+        "occupation": "IT Quality Analyst",
+        "pageURL": "https://survivor.fandom.com/wiki/Bhanu_Gopal",
+        "id": 2
+    },
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/5a/S46_charlie_t.png",
+        "name": "Charlie Davis",
+        "age": "25",
+        "currentResidence": "Boston, MA",
+        "occupation": "Law Student",
+        "pageURL": "https://survivor.fandom.com/wiki/Charlie_Davis",
+        "id": 3
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/1/11/S46_jelinsky_t.png",
+        "name": "David Jelinsky",
+        "age": "21",
+        "currentResidence": "Las Vegas, NV",
+        "occupation": "Slot Machine Salesman",
+        "pageURL": "https://survivor.fandom.com/wiki/David_Jelinsky",
+        "id": 4
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/90/S46_hunter_t.png",
+        "name": "Hunter McKnight",
+        "age": "27",
+        "currentResidence": "French Camp, MS",
+        "occupation": "Science Teacher",
+        "pageURL": "https://survivor.fandom.com/wiki/Hunter_McKnight",
+        "id": 5
+    },
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/1/14/S46_jem_t.png",
+        "name": "Jem Hussain-Adams",
+        "age": "31",
+        "currentResidence": "Chicago, IL",
+        "occupation": "International Brand Mentor",
+        "pageURL": "https://survivor.fandom.com/wiki/Jem_Hussain-Adams",
+        "id": 6
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/2/2a/S46_jess_t.png",
+        "name": "Jess Chong",
+        "age": "37",
+        "currentResidence": "San Francisco, CA",
+        "occupation": "Software Engineer",
+        "pageURL": "https://survivor.fandom.com/wiki/Jess_Chong",
+        "id": 7
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/a/aa/S46_kenzie_t.png",
+        "name": "Kenzie Petty",
+        "age": "28",
+        "currentResidence": "Charlotte, NC",
+        "occupation": "Salon Owner",
+        "pageURL": "https://survivor.fandom.com/wiki/Kenzie_Petty",
+        "id": 8
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/93/S46_liz_t.png",
+        "name": "Liz Wilcox",
+        "age": "35",
+        "currentResidence": "Orlando, FL",
+        "occupation": "Marketing Strategist",
+        "pageURL": "https://survivor.fandom.com/wiki/Liz_Wilcox",
+        "id": 9
+    },
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/6/65/S46_maria_t.png",
+        "name": "Maria Shrime Gonzalez",
+        "age": "47",
+        "currentResidence": "Dallas, TX",
+        "occupation": "Parent Coach",
+        "pageURL": "https://survivor.fandom.com/wiki/Maria_Shrime_Gonzalez",
+        "id": 10
+    },
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/f/f0/S46_moriah_t.png",
+        "name": "Moriah Gaynor",
+        "age": "28",
+        "currentResidence": "San Diego, CA",
+        "occupation": "Program Coordinator",
+        "pageURL": "https://survivor.fandom.com/wiki/Moriah_Gaynor",
+        "id": 11
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/f/f2/S46_q_t.png",
+        "name": "Q Burdette",
+        "age": "29",
+        "currentResidence": "Memphis, TN",
+        "occupation": "Real Estate Agent",
+        "pageURL": "https://survivor.fandom.com/wiki/Q_Burdette",
+        "id": 12
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/4b/S46_randen_t.png",
+        "name": "Randen Montalvo",
+        "age": "40",
+        "currentResidence": "Orlando, FL",
+        "occupation": "Aerospace Tech",
+        "pageURL": "https://survivor.fandom.com/wiki/Randen_Montalvo",
+        "id": 13
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/58/S46_soda_t.png",
+        "name": "Soda Thompson",
+        "age": "27",
+        "currentResidence": "Lake Hopatcong, NJ",
+        "occupation": "Special Ed Teacher",
+        "pageURL": "https://survivor.fandom.com/wiki/Soda_Thompson",
+        "id": 14
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/e/e2/S46_tevin_t.png",
+        "name": "Tevin Davis",
+        "age": "24",
+        "currentResidence": "Richmond, VA",
+        "occupation": "Actor",
+        "pageURL": "https://survivor.fandom.com/wiki/Tevin_Davis",
+        "id": 15
+    },
+    {
+        "tribeColor": "BA5DB6",
+        "tribe": "Yanu",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/8/84/S46_tiffany_t.png",
+        "name": "Tiffany Nicole Ervin",
+        "age": "32",
+        "currentResidence": "Elizabeth, NJ",
+        "occupation": "Artist",
+        "pageURL": "https://survivor.fandom.com/wiki/Tiffany_Nicole_Ervin",
+        "id": 16
+    },
+    {
+        "tribeColor": "85BC54",
+        "tribe": "Siga",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/e/ec/S46_tim_t.png",
+        "name": "Tim Spicer",
+        "age": "30",
+        "currentResidence": "Atlanta, GA",
+        "occupation": "College Coach",
+        "pageURL": "https://survivor.fandom.com/wiki/Tim_Spicer",
+        "id": 17
+    },
+    {
+        "tribeColor": "F09B26",
+        "tribe": "Nami",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/9b/S46_venus_t.png",
+        "name": "Venus Vafa",
+        "age": "24",
+        "currentResidence": "Toronto, ON",
+        "occupation": "Data Analyst",
+        "pageURL": "https://survivor.fandom.com/wiki/Venus_Vafa",
+        "id": 18
+    }
+]

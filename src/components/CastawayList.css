@@ -87,6 +87,18 @@
     background-color: #fcdd31;
 }
 
+.bg-85BC54 {
+    background-color: #85BC54;
+}
+
+.bg-BA5DB6 {
+    background-color: #BA5DB6;
+}
+
+.bg-F09B26 {
+    background-color: #F09B26;
+}
+
 .copy-container {
     display: flex;
     gap: 1rem;

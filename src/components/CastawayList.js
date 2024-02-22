@@ -46,7 +46,7 @@ export default function CastawayList(props) {
 
     return (
         <div className="castaway-list-container">
-            <h2>Season 45 Castaways</h2>
+            <h2>Season 46 Castaways</h2>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className="draggable-table">
                     <Droppable droppableId="Table">
