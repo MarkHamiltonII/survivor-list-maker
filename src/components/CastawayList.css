@@ -101,7 +101,8 @@
 
 .copy-container {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 5px;
     align-items: center;
 }
 
@@ -128,15 +129,16 @@
 }
 
 .copy-button:not(:active)+.copy-span {
-    animation: fade-entry 5s linear;
+    animation: fade-entry 3s linear;
 }
 
 @keyframes fade-entry {
+
     0% {
-        color: white;
+        color: green;
     }
 
-    50% {
+    75% {
         color: green;
     }
 

@@ -41,7 +41,7 @@ export default function CastawayList(props) {
         setButtonMessage(<div><BsCheckLg /> Rankings Copied!</div>)
         setTimeout(()=> {
             setButtonMessage()
-        },5000)
+        },3000)
     }
 
     return (
