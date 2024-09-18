@@ -1,0 +1,200 @@
+[
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/c/c4/S47_andy_t.png",
+        "name": "Andy Rueda",
+        "age": "31",
+        "currentResidence": "Brooklyn, NY",
+        "occupation": "AI Research Assistant",
+        "pageURL": "https://survivor.fandom.com/wiki/Andy_Rueda",
+        "id": 1
+    },
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/a/a9/S47_anika_t.png",
+        "name": "Anika Dhar",
+        "age": "26",
+        "currentResidence": "Los Angeles, CA",
+        "occupation": "Marketing Manager",
+        "pageURL": "https://survivor.fandom.com/wiki/Anika_Dhar",
+        "id": 2
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/e/eb/S47_aysha_t.png",
+        "name": "Aysha Welch",
+        "age": "32",
+        "currentResidence": "Houston, TX",
+        "occupation": "IT Consultant",
+        "pageURL": "https://survivor.fandom.com/wiki/Aysha_Welch",
+        "id": 3
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/1/11/S47_caroline_t.png",
+        "name": "Caroline Vidmar",
+        "age": "27",
+        "currentResidence": "Chicago, IL",
+        "occupation": "Strategy Consultant",
+        "pageURL": "https://survivor.fandom.com/wiki/Caroline_Vidmar",
+        "id": 4
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/0/01/S47_gabe_t.png",
+        "name": "Gabe Ortis",
+        "age": "26",
+        "currentResidence": "Baltimore, MD",
+        "occupation": "Radio Show Host",
+        "pageURL": "https://survivor.fandom.com/wiki/Gabe_Ortis",
+        "id": 5
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/2/2a/S47_genevieve_t.png",
+        "name": "Genevieve Mushaluk",
+        "age": "32",
+        "currentResidence": "Winnipeg, MB",
+        "occupation": "Corporate Lawyer",
+        "pageURL": "https://survivor.fandom.com/wiki/Genevieve_Mushaluk",
+        "id": 6
+    },
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/6/60/S47_jon_t.png",
+        "name": "Jon Lovett",
+        "age": "41",
+        "currentResidence": "Los Angeles, CA",
+        "occupation": "Podcast Host",
+        "pageURL": "https://survivor.fandom.com/wiki/Jon_Lovett",
+        "id": 7
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/5b/S47_kishan_t.png",
+        "name": "Kishan Patel",
+        "age": "27",
+        "currentResidence": "San Francisco, CA",
+        "occupation": "ER Doctor",
+        "pageURL": "https://survivor.fandom.com/wiki/Kishan_Patel",
+        "id": 8
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/99/S47_kyle_t.png",
+        "name": "Kyle Ostwald",
+        "age": "31",
+        "currentResidence": "Cheboygan, MI",
+        "occupation": "Construction Worker",
+        "pageURL": "https://survivor.fandom.com/wiki/Kyle_Ostwald",
+        "id": 9
+    },
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/e/ee/S47_rachel_t.png",
+        "name": "Rachel LaMont",
+        "age": "34",
+        "currentResidence": "Southfield, MI",
+        "occupation": "Graphic Designer",
+        "pageURL": "https://survivor.fandom.com/wiki/Rachel_LaMont",
+        "id": 10
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/58/S47_rome_t.png",
+        "name": "Rome Cooney",
+        "age": "30",
+        "currentResidence": "Phoenix, AZ",
+        "occupation": "E-Sports Commentator",
+        "pageURL": "https://survivor.fandom.com/wiki/Rome_Cooney",
+        "id": 11
+    },
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/dc/S47_sam_t.png",
+        "name": "Sam Phalen",
+        "age": "24",
+        "currentResidence": "Nashville, TN",
+        "occupation": "Sports Reporter",
+        "pageURL": "https://survivor.fandom.com/wiki/Sam_Phalen",
+        "id": 12
+    },
+    {
+        "tribeColor": "fcdd31",
+        "tribe": "Gata",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/3/30/S47_sierra_t.png",
+        "name": "Sierra Wright",
+        "age": "26",
+        "currentResidence": "Phoenixville, PA",
+        "occupation": "Nurse",
+        "pageURL": "https://survivor.fandom.com/wiki/Sierra_Wright",
+        "id": 13
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/c/c8/S47_sol_t.png",
+        "name": "Sol Yi",
+        "age": "42",
+        "currentResidence": "Norwalk, CT",
+        "occupation": "Medical Device Salesman",
+        "pageURL": "https://survivor.fandom.com/wiki/Sol_Yi",
+        "id": 14
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/c/cf/S47_sue_t.png",
+        "name": "Sue Smey",
+        "age": "58",
+        "currentResidence": "Putnam Valley, NY",
+        "occupation": "Flight School Owner",
+        "pageURL": "https://survivor.fandom.com/wiki/Sue_Smey",
+        "id": 15
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/9a/S47_tk_t.png",
+        "name": "TK Foster",
+        "age": "31",
+        "currentResidence": "Upper Marlboro, MD",
+        "occupation": "Athlete Marketing Manager",
+        "pageURL": "https://survivor.fandom.com/wiki/TK_Foster",
+        "id": 16
+    },
+    {
+        "tribeColor": "ff4148",
+        "tribe": "Lavo",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/f/fc/S47_teeny_t.png",
+        "name": "Teeny Chirichillo",
+        "age": "23",
+        "currentResidence": "Manahawkin, NJ",
+        "occupation": "Freelance Writer",
+        "pageURL": "https://survivor.fandom.com/wiki/Teeny_Chirichillo",
+        "id": 17
+    },
+    {
+        "tribeColor": "049ed9",
+        "tribe": "Tuku",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/5d/S47_tiyana_t.png",
+        "name": "Tiyana Hallums",
+        "age": "27",
+        "currentResidence": "Aiea, HI",
+        "occupation": "Flight Attendant",
+        "pageURL": "https://survivor.fandom.com/wiki/Tiyana_Hallums",
+        "id": 18
+    }
+]
