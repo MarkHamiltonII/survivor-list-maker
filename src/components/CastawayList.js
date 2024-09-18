@@ -66,7 +66,7 @@ export default function CastawayList(props) {
                                     {castaways.map((castaway, index) => (
                                         <Draggable draggableId={`${index}`} index={index} key={index}>
                                             {(provided, snapshot) => (
-                                                <tr ref={provided.innerRef} {...provided.draggableProps} style={{ backgroundColor: snapshot.isDragging ? 'snow' : `#${castaway.tribeColor}` }} key={index} >
+                                                <tr ref={provided.innerRef} {...provided.draggableProps} className={snapshot.isDragging ? 'isDragging-' + snapshot.isDragging : 'bg-' + castaway.tribeColor} key={index} >
                                                     <td>{index + 1}</td>
                                                     <td><a href={castaway.pageURL} title={`${castaway.name}'s CBS page`} target="_blank" rel="noreferrer"><img src={castaway.iconURL} alt={`Portrait of ${castaway.name}`} /> <span>{castaway.name}</span></a></td>
                                                     <td className="aux-info">{castaway.age}</td>

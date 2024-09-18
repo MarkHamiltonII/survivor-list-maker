@@ -75,6 +75,11 @@
     background-color: lightgray;
 }
 
+.tribe-color {
+    --tribeColor: "white";
+    background-color: var(--tribeColor);
+}
+
 .bg-ff4148 {
     background-color: #ff4148;
 }
@@ -97,6 +102,10 @@
 
 .bg-F09B26 {
     background-color: #F09B26;
+}
+
+.bg-049ed9 {
+    background-color: #049ed9;
 }
 
 .copy-container {
