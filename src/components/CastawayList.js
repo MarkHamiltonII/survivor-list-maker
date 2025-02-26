@@ -39,14 +39,14 @@ export default function CastawayList(props) {
 
     const updateButtonMessage = () => {
         setButtonMessage(<div><BsCheckLg /> Rankings Copied!</div>)
-        setTimeout(()=> {
+        setTimeout(() => {
             setButtonMessage()
-        },3000)
+        }, 3000)
     }
 
     return (
         <div className="castaway-list-container">
-            <h2>Season 47 Castaways</h2>
+            <h2>Season 48 Castaways</h2>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className="draggable-table">
                     <Droppable droppableId="Table">
@@ -86,7 +86,7 @@ export default function CastawayList(props) {
             </DragDropContext>
             <CopyToClipboard text={copyToClipBoard(castaways)}>
                 <div className="copy-container">
-                    <button className="copy-button" onClick={()=>updateButtonMessage()}>
+                    <button className="copy-button" onClick={() => updateButtonMessage()}>
                         Copy your rankings!
                     </button>
                     <span className="copy-span">{buttonMessage}</span>
