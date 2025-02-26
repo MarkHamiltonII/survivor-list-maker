@@ -108,6 +108,18 @@
     background-color: #049ed9;
 }
 
+.bg-d05dbd {
+    background-color: #d05dbd;
+}
+
+.bg-a7f084 {
+    background-color: #a7f084;
+}
+
+.bg-feb635 {
+    background-color: #feb635;
+}
+
 .copy-container {
     display: flex;
     flex-direction: column;

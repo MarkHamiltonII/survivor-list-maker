@@ -1,6 +1,6 @@
 import './App.css';
 import CastawayList from './components/CastawayList';
-import castaways from './data/season_47_castaways.json';
+import castaways from './data/season_48_castaways.json';
 
 function App() {
   return (
