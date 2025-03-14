@@ -120,6 +120,15 @@
     background-color: #feb635;
 }
 
+.lock-button {
+    display: block;
+    cursor: pointer;
+    background-color: Transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
 .copy-container {
     display: flex;
     flex-direction: column;

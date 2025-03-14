@@ -2,29 +2,37 @@ import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { unstable_renderSubtreeIntoContainer } from "react-dom";
-import { BsGripVertical, BsCheckLg, BsLockFill, BsUnlockFill } from "react-icons/bs";
-import castawayList from '../data/season_48_castaways.json';
-import './CastawayList.css';
+import {
+    BsGripVertical,
+    BsCheckLg,
+    BsLockFill,
+    BsUnlockFill,
+} from "react-icons/bs";
+import castawayList from "../data/season_48_castaways.json";
+import "./CastawayList.css";
 
 export default function CastawayList() {
     const enrichedCastawayList = castawayList.map((castaway) => {
         const enrichedCastaway = {
             ...castaway,
             locked: false,
-        }
-        return enrichedCastaway
-    })
-    const [castaways, setCastaways] = useState(enrichedCastawayList)
-    const [buttonMessage, setButtonMessage] = useState()
+        };
+        return enrichedCastaway;
+    });
+    const [castaways, setCastaways] = useState(enrichedCastawayList);
+    const [buttonMessage, setButtonMessage] = useState();
 
-    const onDragEnd = result => {
+    const onDragEnd = (result) => {
         const { destination, source } = result;
 
         if (!destination) {
             return;
         }
 
-        if (destination.droppableId === source.droppableId && destination.index === source.index) {
+        if (
+            destination.droppableId === source.droppableId &&
+            destination.index === source.index
+        ) {
             return;
         }
 
@@ -33,20 +41,24 @@ export default function CastawayList() {
         newCastaways.splice(destination.index, 0, movedCastaway[0]);
 
         setCastaways(newCastaways);
-    }
+    };
 
     const updateButtonMessage = () => {
-        setButtonMessage(<div><BsCheckLg /> Rankings Copied!</div>)
+        setButtonMessage(
+            <div>
+                <BsCheckLg /> Rankings Copied!
+            </div>,
+        );
         setTimeout(() => {
-            setButtonMessage()
-        }, 3000)
-    }
+            setButtonMessage();
+        }, 3000);
+    };
 
     function toggleLock(castaway, index) {
         const updatedCastaway = {
             ...castaway,
-            locked: !castaway.locked
-        }
+            locked: !castaway.locked,
+        };
         const newCastaways = [...castaways];
         newCastaways.splice(index, 1, updatedCastaway);
         setCastaways(newCastaways);
@@ -55,12 +67,21 @@ export default function CastawayList() {
     return (
         <div className="castaway-list-container">
             <h2>Season 48 Castaways</h2>
-            <button className="copy-button" onClick={() => setCastaways(randomizeCastaways(castaways))}>Randomize List!</button>
+            <button
+                className="copy-button"
+                onClick={() => setCastaways(randomizeCastaways(castaways))}
+            >
+                Randomize List!
+            </button>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className="draggable-table">
                     <Droppable droppableId="Table">
                         {(provided, snapshot) => (
-                            <table ref={provided.innerRef} {...provided.droppableProps} className={`castaway-table isDraggingOver-${snapshot.isDraggingOver}`}>
+                            <table
+                                ref={provided.innerRef}
+                                {...provided.droppableProps}
+                                className={`castaway-table isDraggingOver-${snapshot.isDraggingOver}`}
+                            >
                                 <thead>
                                     <tr>
                                         <th>Rank</th>
@@ -74,16 +95,54 @@ export default function CastawayList() {
                                 </thead>
                                 <tbody>
                                     {castaways.map((castaway, index) => (
-                                        <Draggable draggableId={`${index}`} index={index} key={index}>
+                                        <Draggable
+                                            draggableId={`${index}`}
+                                            index={index}
+                                            key={index}
+                                        >
                                             {(provided, snapshot) => (
-                                                <tr ref={provided.innerRef} {...provided.draggableProps} className={snapshot.isDragging ? 'isDragging-' + snapshot.isDragging : 'bg-' + castaway.tribeColor} key={index} >
+                                                <tr
+                                                    ref={provided.innerRef}
+                                                    {...provided.draggableProps}
+                                                    className={
+                                                        snapshot.isDragging
+                                                            ? "isDragging-" + snapshot.isDragging
+                                                            : "bg-" + castaway.tribeColor
+                                                    }
+                                                    key={index}
+                                                >
                                                     <td>{index + 1}</td>
-                                                    <td><a href={castaway.pageURL} title={`${castaway.name}'s CBS page`} target="_blank" rel="noreferrer"><img src={castaway.iconURL} alt={`Portrait of ${castaway.name}`} /> <span>{castaway.name}</span></a></td>
+                                                    <td>
+                                                        <a
+                                                            href={castaway.pageURL}
+                                                            title={`${castaway.name}'s CBS page`}
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                        >
+                                                            <img
+                                                                src={castaway.iconURL}
+                                                                alt={`Portrait of ${castaway.name}`}
+                                                            />{" "}
+                                                            <span>{castaway.name}</span>
+                                                        </a>
+                                                    </td>
                                                     <td className="aux-info">{castaway.age}</td>
-                                                    <td className="aux-info">{castaway.currentResidence}</td>
+                                                    <td className="aux-info">
+                                                        {castaway.currentResidence}
+                                                    </td>
                                                     <td className="aux-info">{castaway.occupation}</td>
-                                                    <td>{castaway.locked ? <BsLockFill onClick={() => toggleLock(castaway, index)} /> : <BsUnlockFill onClick={() => toggleLock(castaway, index)} />}</td>
-                                                    <td {...provided.dragHandleProps}><BsGripVertical /></td>
+                                                    <td>
+                                                        <button className="lock-button" onClick={() => toggleLock(castaway, index)}>
+                                                            {castaway.locked ? (
+                                                                <BsLockFill />
+                                                            ) : (
+                                                                <BsUnlockFill />
+                                                            )}
+                                                        </button>
+                                                    </td>
+                                                    <td {...provided.dragHandleProps}>
+                                                        <BsGripVertical />
+                                                    </td>
                                                 </tr>
                                             )}
                                         </Draggable>
@@ -104,28 +163,28 @@ export default function CastawayList() {
                 </div>
             </CopyToClipboard>
         </div>
-    )
+    );
 }
 
 // Utils
 
 const copyToClipBoard = (castaways) => {
-    let copyText = '';
+    let copyText = "";
     castaways.map((castaway, index) => {
-        copyText += `${index + 1}. ${castaway.name} \n`
-        return ''
+        copyText += `${index + 1}. ${castaway.name} \n`;
+        return "";
     });
     copyText.slice(0, -2);
     return copyText;
-}
+};
 
 function randomizeCastaways(castaways) {
-    let unlockedCastawyas = castaways.filter(castaway => !castaway.locked);
+    let unlockedCastawyas = castaways.filter((castaway) => !castaway.locked);
     const randomizedCastaways = castaways.map((castaway) => {
         if (castaway.locked) return castaway;
         const randomIndex = Math.floor(Math.random() * unlockedCastawyas.length);
         const randomCastaway = unlockedCastawyas.splice(randomIndex, 1)[0];
         return randomCastaway;
-    })
+    });
     return randomizedCastaways;
 }
