@@ -1,12 +1,20 @@
 import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { BsGripVertical, BsCheckLg } from "react-icons/bs";
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
+import { BsGripVertical, BsCheckLg, BsLockFill, BsUnlockFill } from "react-icons/bs";
+import castawayList from '../data/season_48_castaways.json';
 import './CastawayList.css';
 
-export default function CastawayList(props) {
-    const { castawayList } = props;
-    const [castaways, setCastaways] = useState(castawayList)
+export default function CastawayList() {
+    const enrichedCastawayList = castawayList.map((castaway) => {
+        const enrichedCastaway = {
+            ...castaway,
+            locked: false,
+        }
+        return enrichedCastaway
+    })
+    const [castaways, setCastaways] = useState(enrichedCastawayList)
     const [buttonMessage, setButtonMessage] = useState()
 
     const onDragEnd = result => {
@@ -27,16 +35,6 @@ export default function CastawayList(props) {
         setCastaways(newCastaways);
     }
 
-    const copyToClipBoard = (castaways) => {
-        let copyText = '';
-        castaways.map((castaway, index) => {
-            copyText += `${index + 1}. ${castaway.name} \n`
-            return ''
-        });
-        copyText.slice(0, -2);
-        return copyText;
-    }
-
     const updateButtonMessage = () => {
         setButtonMessage(<div><BsCheckLg /> Rankings Copied!</div>)
         setTimeout(() => {
@@ -44,9 +42,20 @@ export default function CastawayList(props) {
         }, 3000)
     }
 
+    function toggleLock(castaway, index) {
+        const updatedCastaway = {
+            ...castaway,
+            locked: !castaway.locked
+        }
+        const newCastaways = [...castaways];
+        newCastaways.splice(index, 1, updatedCastaway);
+        setCastaways(newCastaways);
+    }
+
     return (
         <div className="castaway-list-container">
             <h2>Season 48 Castaways</h2>
+            <button className="copy-button" onClick={() => setCastaways(randomizeCastaways(castaways))}>Randomize List!</button>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className="draggable-table">
                     <Droppable droppableId="Table">
@@ -60,6 +69,7 @@ export default function CastawayList(props) {
                                         <th className="aux-info">Current Residence</th>
                                         <th className="aux-info">Occupation</th>
                                         <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,6 +82,7 @@ export default function CastawayList(props) {
                                                     <td className="aux-info">{castaway.age}</td>
                                                     <td className="aux-info">{castaway.currentResidence}</td>
                                                     <td className="aux-info">{castaway.occupation}</td>
+                                                    <td>{castaway.locked ? <BsLockFill onClick={() => toggleLock(castaway, index)} /> : <BsUnlockFill onClick={() => toggleLock(castaway, index)} />}</td>
                                                     <td {...provided.dragHandleProps}><BsGripVertical /></td>
                                                 </tr>
                                             )}
@@ -94,4 +105,27 @@ export default function CastawayList(props) {
             </CopyToClipboard>
         </div>
     )
+}
+
+// Utils
+
+const copyToClipBoard = (castaways) => {
+    let copyText = '';
+    castaways.map((castaway, index) => {
+        copyText += `${index + 1}. ${castaway.name} \n`
+        return ''
+    });
+    copyText.slice(0, -2);
+    return copyText;
+}
+
+function randomizeCastaways(castaways) {
+    let unlockedCastawyas = castaways.filter(castaway => !castaway.locked);
+    const randomizedCastaways = castaways.map((castaway) => {
+        if (castaway.locked) return castaway;
+        const randomIndex = Math.floor(Math.random() * unlockedCastawyas.length);
+        const randomCastaway = unlockedCastawyas.splice(randomIndex, 1)[0];
+        return randomCastaway;
+    })
+    return randomizedCastaways;
 }

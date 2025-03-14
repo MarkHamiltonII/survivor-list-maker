@@ -1,6 +1,5 @@
-import './App.css';
-import CastawayList from './components/CastawayList';
-import castaways from './data/season_48_castaways.json';
+import "./App.css";
+import CastawayList from "./components/CastawayList";
 
 function App() {
   return (
@@ -8,7 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Fantasy Survivor Ranking Assistant</h1>
       </header>
-      <CastawayList castawayList={castaways} />
+      <CastawayList />
     </div>
   );
 }
