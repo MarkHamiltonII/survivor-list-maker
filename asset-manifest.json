@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/survivor-list-maker/static/css/main.c7d347ae.css",
-    "main.js": "/survivor-list-maker/static/js/main.39b26a1d.js",
+    "main.css": "/survivor-list-maker/static/css/main.70b81ceb.css",
+    "main.js": "/survivor-list-maker/static/js/main.a028cacd.js",
     "index.html": "/survivor-list-maker/index.html",
-    "main.c7d347ae.css.map": "/survivor-list-maker/static/css/main.c7d347ae.css.map",
-    "main.39b26a1d.js.map": "/survivor-list-maker/static/js/main.39b26a1d.js.map"
+    "main.70b81ceb.css.map": "/survivor-list-maker/static/css/main.70b81ceb.css.map",
+    "main.a028cacd.js.map": "/survivor-list-maker/static/js/main.a028cacd.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7d347ae.css",
-    "static/js/main.39b26a1d.js"
+    "static/css/main.70b81ceb.css",
+    "static/js/main.a028cacd.js"
   ]
 }
