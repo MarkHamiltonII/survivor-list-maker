@@ -5,7 +5,7 @@ import json
 # NOTE: THIS NEEDS TO BE DONE BEFORE THE SEASON TO PROPERLY SCRAPE ONCE THE TABLE POPULATES, IT WON'T WORK
 
 base_url = "https://survivor.fandom.com"
-url = "https://survivor.fandom.com/wiki/Survivor_48"
+url = "https://survivor.fandom.com/wiki/Survivor_49"
 
 response = requests.get(url)
 html_raw = response.text
@@ -19,12 +19,18 @@ castaways = []
 index = 1
 
 def getTribeFromColor(color):
-    if color == 'feb635':
-        return 'Civa'
-    if color == 'd05dbd':
-        return 'Lagi'
-    if color == 'a7f084':
-        return 'Vula'
+    if color == '3bb1db':
+        return 'Kele'
+    if color == 'ffda45':
+        return 'Hina'
+    if color == 'ff5d51':
+        return 'Uli'
+    # if color == 'feb635':
+    #     return 'Civa'
+    # if color == 'd05dbd':
+    #     return 'Lagi'
+    # if color == 'a7f084':
+    #     return 'Vula'
     # if color == 'fcdd31':
     #     return 'Gata'
     # if color == 'ff4148':
@@ -62,5 +68,5 @@ for row in rows:
         index += 1
         castaways.append(castaway)
 
-with open("src/data/season_48_castaways.json", 'w') as outfile:
+with open("src/data/season_49_castaways.json", 'w') as outfile:
     json.dump(castaways, outfile, indent=4)

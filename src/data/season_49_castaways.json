@@ -1,0 +1,200 @@
+[
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/9d/S49_nicole_t.png",
+        "name": "Nicole Mazullo",
+        "age": "26",
+        "currentResidence": "Philadelphia, PA",
+        "occupation": "Financial Crime Consultant",
+        "pageURL": "https://survivor.fandom.com/wiki/Nicole_Mazullo",
+        "id": 1
+    },
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/6/61/S49_alex_t.png",
+        "name": "Alex Moore",
+        "age": "26",
+        "currentResidence": "Washington, DC",
+        "occupation": "Political Comms Director",
+        "pageURL": "https://survivor.fandom.com/wiki/Alex_Moore",
+        "id": 2
+    },
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/a/ae/S49_annie_t.png",
+        "name": "Annie Davis",
+        "age": "49",
+        "currentResidence": "Austin, TX",
+        "occupation": "Musician",
+        "pageURL": "https://survivor.fandom.com/wiki/Annie_Davis",
+        "id": 3
+    },
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/6/68/S49_jake_t.png",
+        "name": "Jake Latimer",
+        "age": "35",
+        "currentResidence": "St. Albert, AB",
+        "occupation": "Correctional Officer",
+        "pageURL": "https://survivor.fandom.com/wiki/Jake_Latimer",
+        "id": 4
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/a/a7/S49_jason_t.png",
+        "name": "Jason Treul",
+        "age": "32",
+        "currentResidence": "Santa Ana, CA",
+        "occupation": "Law Clerk",
+        "pageURL": "https://survivor.fandom.com/wiki/Jason_Treul",
+        "id": 5
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/0/0e/S49_jawan_t.png",
+        "name": "Jawan Pitts",
+        "age": "28",
+        "currentResidence": "Los Angeles, CA",
+        "occupation": "Video Editor",
+        "pageURL": "https://survivor.fandom.com/wiki/Jawan_Pitts",
+        "id": 6
+    },
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/a/aa/S49_jeremiah_t.png",
+        "name": "Jeremiah Ing",
+        "age": "38",
+        "currentResidence": "Toronto, ON",
+        "occupation": "Global Events Manager",
+        "pageURL": "https://survivor.fandom.com/wiki/Jeremiah_Ing",
+        "id": 7
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/46/S49_kristina_t.png",
+        "name": "Kristina Mills",
+        "age": "35",
+        "currentResidence": "Edmond, OK",
+        "occupation": "MBA Career Coach",
+        "pageURL": "https://survivor.fandom.com/wiki/Kristina_Mills",
+        "id": 8
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/d6/S49_matt_t.png",
+        "name": "Matt Williams",
+        "age": "52",
+        "currentResidence": "St. George, UT",
+        "occupation": "Airport Ramp Agent",
+        "pageURL": "https://survivor.fandom.com/wiki/Matt_Williams",
+        "id": 9
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/c/c4/S49_mc_t.png",
+        "name": "MC Chukwujekwu",
+        "age": "29",
+        "currentResidence": "San Diego, CA",
+        "occupation": "Fitness Trainer",
+        "pageURL": "https://survivor.fandom.com/wiki/MC_Chukwujekwu",
+        "id": 10
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/0/05/S49_nate_t.png",
+        "name": "Nate Moore",
+        "age": "47",
+        "currentResidence": "Hermosa Beach, CA",
+        "occupation": "Film Producer",
+        "pageURL": "https://survivor.fandom.com/wiki/Nate_Moore",
+        "id": 11
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/43/S49_rizo_t.png",
+        "name": "Rizo Velovic",
+        "age": "25",
+        "currentResidence": "Yonkers, NY",
+        "occupation": "Tech Sales",
+        "pageURL": "https://survivor.fandom.com/wiki/Rizo_Velovic",
+        "id": 12
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/91/S49_sage_t.png",
+        "name": "Sage Ahrens-Nichols",
+        "age": "30",
+        "currentResidence": "Olympia, WA",
+        "occupation": "Clinical Social Worker",
+        "pageURL": "https://survivor.fandom.com/wiki/Sage_Ahrens-Nichols",
+        "id": 13
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/f/f7/S49_savannah_t.png",
+        "name": "Savannah Louie",
+        "age": "31",
+        "currentResidence": "Atlanta, GA",
+        "occupation": "Former Reporter",
+        "pageURL": "https://survivor.fandom.com/wiki/Savannah_Louie",
+        "id": 14
+    },
+    {
+        "tribeColor": "ff5d51",
+        "tribe": "Uli",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/8/82/S49_shannon_t.png",
+        "name": "Shannon Fairweather",
+        "age": "27",
+        "currentResidence": "Boston, MA",
+        "occupation": "Wellness Specialist",
+        "pageURL": "https://survivor.fandom.com/wiki/Shannon_Fairweather",
+        "id": 15
+    },
+    {
+        "tribeColor": "3bb1db",
+        "tribe": "Kele",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/0/0e/S49_sophi_t.png",
+        "name": "Sophi Balerdi",
+        "age": "27",
+        "currentResidence": "Miami, FL",
+        "occupation": "Entrepreneur",
+        "pageURL": "https://survivor.fandom.com/wiki/Sophi_Balerdi",
+        "id": 16
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/2/2a/S49_sophie_t.png",
+        "name": "Sophie Segreti",
+        "age": "31",
+        "currentResidence": "New York, NY",
+        "occupation": "Strategy Associate",
+        "pageURL": "https://survivor.fandom.com/wiki/Sophie_Segreti",
+        "id": 17
+    },
+    {
+        "tribeColor": "ffda45",
+        "tribe": "Hina",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/da/S49_steven_t.png",
+        "name": "Steven Ramm",
+        "age": "35",
+        "currentResidence": "Denver, CO",
+        "occupation": "Rocket Scientist",
+        "pageURL": "https://survivor.fandom.com/wiki/Steven_Ramm",
+        "id": 18
+    }
+]

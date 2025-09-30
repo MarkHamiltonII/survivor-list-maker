@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 import {
     BsGripVertical,
     BsCheckLg,
     BsLockFill,
     BsUnlockFill,
 } from "react-icons/bs";
-import castawayList from "../data/season_48_castaways.json";
+import castawayList from "../data/season_49_castaways.json";
 import "./CastawayList.css";
 
 export default function CastawayList() {
@@ -66,7 +65,7 @@ export default function CastawayList() {
 
     return (
         <div className="castaway-list-container">
-            <h2>Season 48 Castaways</h2>
+            <h2>Season 49 Castaways</h2>
             <button
                 className="copy-button"
                 onClick={() => setCastaways(randomizeCastaways(castaways))}
