@@ -170,7 +170,8 @@ export default function CastawayList() {
 const copyToClipBoard = (castaways) => {
     let copyText = "";
     castaways.map((castaway, index) => {
-        copyText += `${index + 1}. ${castaway.name} \n`;
+        const [firstname] = castaway.name.split(" ")
+        copyText += `${index + 1}. ${firstname} \n`;
         return "";
     });
     copyText.slice(0, -2);
