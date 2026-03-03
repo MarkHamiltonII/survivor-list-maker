@@ -7,7 +7,7 @@ import {
     BsLockFill,
     BsUnlockFill,
 } from "react-icons/bs";
-import castawayList from "../data/season_49_castaways.json";
+import castawayList from "../data/season_50_castaways.json";
 import "./CastawayList.css";
 
 export default function CastawayList() {
@@ -170,7 +170,7 @@ export default function CastawayList() {
 const copyToClipBoard = (castaways) => {
     let copyText = "";
     castaways.map((castaway, index) => {
-        const [firstname] = castaway.name.split(" ")
+        const [firstname] = castaway.name.includes("Coach") ? ["Coach"] : castaway.name.split(" ")
         copyText += `${index + 1}. ${firstname} \n`;
         return "";
     });
