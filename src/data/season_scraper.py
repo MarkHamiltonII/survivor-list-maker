@@ -1,72 +1,86 @@
+import json
+import re
+from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
-import json
 
-# NOTE: THIS NEEDS TO BE DONE BEFORE THE SEASON TO PROPERLY SCRAPE ONCE THE TABLE POPULATES, IT WON'T WORK
+SEASON = 51
+BASE_URL = "https://survivor.fandom.com"
+API_URL = f"{BASE_URL}/api.php"
 
-base_url = "https://survivor.fandom.com"
-url = "https://survivor.fandom.com/wiki/Survivor_49"
+TRIBES_BY_COLOR = {
+    "3bb1db": "Kele",
+    "ffda45": "Hina",
+    "ff5d51": "Uli",
+    "feb635": "Civa",
+    "d05dbd": "Lagi",
+    "a7f084": "Vula",
+    "fcdd31": "Gata",
+    "ff4148": "Lavo",
+    "049ed9": "Tuku",
+}
 
-response = requests.get(url)
-html_raw = response.text
-soup = BeautifulSoup(html_raw, 'html.parser')
 
-rows = soup.find_all('tr')
-smalls = soup.find_all('small')
-titles = soup.find_all("title")
+def get_tribe_from_color(color):
+    return TRIBES_BY_COLOR.get(color, "Unknown")
 
-castaways = []
-index = 1
 
-def getTribeFromColor(color):
-    if color == '3bb1db':
-        return 'Kele'
-    if color == 'ffda45':
-        return 'Hina'
-    if color == 'ff5d51':
-        return 'Uli'
-    # if color == 'feb635':
-    #     return 'Civa'
-    # if color == 'd05dbd':
-    #     return 'Lagi'
-    # if color == 'a7f084':
-    #     return 'Vula'
-    # if color == 'fcdd31':
-    #     return 'Gata'
-    # if color == 'ff4148':
-    #     return 'Lavo'
-    # if color == '049ed9':
-    #     return 'Tuku'
+def get_castaways():
+    response = requests.get(
+        API_URL,
+        params={
+            "action": "parse",
+            "page": f"Survivor_{SEASON}",
+            "prop": "text",
+            "format": "json",
+        },
+        headers={"User-Agent": "survivor-list-maker/1.0"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    html = response.json()["parse"]["text"]["*"]
+    soup = BeautifulSoup(html, "html.parser")
 
-for row in rows:
-    if len(castaways) == 18:
-        break
-    castaway = {}
-    tds = row.find_all('td')
-    if tds:
-        for td in tds:
-            links = td.find_all('a')
-            if links:
-                for link in links:
-                    if td.get('align'):
-                        info = td.find('small').text.split(", ")
-                        castaway['name'] = link.get('title')
-                        castaway['age'] = info[0]
-                        castaway['currentResidence'] = info[1] +', ' + info[2][0:2]
-                        castaway['occupation'] = info[2][2:]
-                        castaway['pageURL'] = f'{base_url}{link.get("href")}'
-                    else:
-                        castaway['tribeColor'] = td.get('style')[12:18]
-                        castaway['tribe'] = getTribeFromColor(castaway['tribeColor'])
-                        img = link.find('img')
-                        if img.get('data-src'):
-                            castaway['iconURL'] = img.get('data-src').split('/revision')[0]
-                        else:
-                            castaway['iconURL'] = img.get('src').split('/revision')[0]
-    if castaway:
-        castaway['id'] = index
-        index += 1
-        castaways.append(castaway)
+    castaways = []
+    for row in soup.find_all("tr"):
+        info_cell = row.find("td", align="left")
+        link = info_cell.find("a", title=True) if info_cell else None
+        small = info_cell.find("small") if info_cell else None
+        if not link or not small:
+            continue
 
-with open("src/data/season_49_castaways.json", 'w') as outfile:
-    json.dump(castaways, outfile, indent=4)
+        info = list(small.stripped_strings)
+        if len(info) < 2:
+            continue
+        age, residence, state = [part.strip() for part in info[0].split(",", 2)]
+        image_cell = row.find("td")
+        image = image_cell.find("img") if image_cell else None
+        image_url = (image.get("data-src") or image.get("src")) if image else ""
+        image_url = image_url.split("/revision")[0]
+        style = image_cell.get("style", "") if image_cell else ""
+        color_match = re.search(r"background:\s*#([0-9a-fA-F]{6})", style)
+        tribe_color = color_match.group(1).lower() if color_match else ""
+
+        castaways.append(
+            {
+                "tribeColor": tribe_color,
+                "tribe": get_tribe_from_color(tribe_color),
+                "iconURL": image_url,
+                "name": link["title"],
+                "age": age,
+                "currentResidence": f"{residence}, {state}",
+                "occupation": " ".join(info[1:]),
+                "pageURL": f"{BASE_URL}{link['href']}",
+                "id": len(castaways) + 1,
+            }
+        )
+
+    if not castaways:
+        raise RuntimeError("No castaways found in the Survivor page response")
+    return castaways
+
+
+output_path = Path(__file__).with_name(f"season_{SEASON}_castaways.json")
+with output_path.open("w", encoding="utf-8") as outfile:
+    json.dump(get_castaways(), outfile, indent=4)

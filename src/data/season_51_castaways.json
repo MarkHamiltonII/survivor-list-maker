@@ -1,0 +1,233 @@
+[
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/57/S51_aaliyah_t.png",
+        "name": "Aaliyah Puglia",
+        "age": "24",
+        "currentResidence": "Providence, RI",
+        "occupation": "Chef",
+        "pageURL": "https://survivor.fandom.com/wiki/Aaliyah_Puglia",
+        "id": 1
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/1/17/S51_alexis_t.png",
+        "name": "Alexis Levine",
+        "age": "34",
+        "currentResidence": "Atlanta, GA",
+        "occupation": "Criminal Defense Attorney",
+        "pageURL": "https://survivor.fandom.com/wiki/Alexis_Levine",
+        "id": 2
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/f/fc/S51_ana_t.png",
+        "name": "Ana Sani",
+        "age": "34",
+        "currentResidence": "Toronto, ON",
+        "occupation": "Voice Actress",
+        "pageURL": "https://survivor.fandom.com/wiki/Ana_Sani",
+        "id": 3
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/5/5b/S51_brady_t.png",
+        "name": "Brady Booker",
+        "age": "27",
+        "currentResidence": "Knoxville, TN",
+        "occupation": "Pro Wrestler",
+        "pageURL": "https://survivor.fandom.com/wiki/Brady_Booker",
+        "id": 4
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/e/e0/S51_carter_t.png",
+        "name": "Carter Krull",
+        "age": "24",
+        "currentResidence": "Sioux Falls, SD",
+        "occupation": "Livestock Farmer",
+        "pageURL": "https://survivor.fandom.com/wiki/Carter_Krull",
+        "id": 5
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/45/S51_cristian_t.png",
+        "name": "Cristian Chavez",
+        "age": "25",
+        "currentResidence": "Salt Lake City, UT",
+        "occupation": "Head of HR",
+        "pageURL": "https://survivor.fandom.com/wiki/Cristian_Chavez",
+        "id": 6
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/90/S51_kilby_t.png",
+        "name": "Danny Kilby",
+        "age": "30",
+        "currentResidence": "London, ON",
+        "occupation": "Game Designer",
+        "pageURL": "https://survivor.fandom.com/wiki/Danny_Kilby",
+        "id": 7
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/4d/S51_devin_t.png",
+        "name": "Devin Way",
+        "age": "33",
+        "currentResidence": "Los Angeles, CA",
+        "occupation": "Actor",
+        "pageURL": "https://survivor.fandom.com/wiki/Devin_Way",
+        "id": 8
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/49/S51_eric_t.png",
+        "name": "Eric Macksoud",
+        "age": "34",
+        "currentResidence": "Windsor Locks, CT",
+        "occupation": "Mental Health Counselor",
+        "pageURL": "https://survivor.fandom.com/wiki/Eric_Macksoud",
+        "id": 9
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/8/83/S51_jelly_t.png",
+        "name": "Jelly Loblack",
+        "age": "29",
+        "currentResidence": "Bloomington, IN",
+        "occupation": "Sociology Professor",
+        "pageURL": "https://survivor.fandom.com/wiki/Jelly_Loblack",
+        "id": 10
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/8/8f/S51_jenna_t.png",
+        "name": "Jenna Doore",
+        "age": "30",
+        "currentResidence": "Toledo, OH",
+        "occupation": "Wedding Photographer",
+        "pageURL": "https://survivor.fandom.com/wiki/Jenna_Doore",
+        "id": 11
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/d2/S51_kristin_t.png",
+        "name": "Kristin Flickinger",
+        "age": "49",
+        "currentResidence": "Santa Barbara, CA",
+        "occupation": "Crisis Management",
+        "pageURL": "https://survivor.fandom.com/wiki/Kristin_Flickinger",
+        "id": 12
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/dc/S51_lewis_t.png",
+        "name": "Lewis Kelly",
+        "age": "28",
+        "currentResidence": "Corozal, PR",
+        "occupation": "Farmer",
+        "pageURL": "https://survivor.fandom.com/wiki/Lewis_Kelly",
+        "id": 13
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/7/7a/S51_linnea_t.png",
+        "name": "Linnea Capobianco",
+        "age": "25",
+        "currentResidence": "Jersey City, NJ",
+        "occupation": "Entrepreneur",
+        "pageURL": "https://survivor.fandom.com/wiki/Linnea_Capobianco",
+        "id": 14
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/7/76/S51_maggie_t.png",
+        "name": "Maggie Nestor",
+        "age": "40",
+        "currentResidence": "Charles Town, WV",
+        "occupation": "Farmer",
+        "pageURL": "https://survivor.fandom.com/wiki/Maggie_Nestor",
+        "id": 15
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/d/d6/S51_mike_t.png",
+        "name": "Mike Pinsky",
+        "age": "32",
+        "currentResidence": "New York City, NY",
+        "occupation": "Baseball Executive",
+        "pageURL": "https://survivor.fandom.com/wiki/Mike_Pinsky",
+        "id": 16
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/4/4c/S51_ori_t.png",
+        "name": "Ori Jean-Charles",
+        "age": "27",
+        "currentResidence": "Spring Valley, NY",
+        "occupation": "Personal Trainer",
+        "pageURL": "https://survivor.fandom.com/wiki/Ori_Jean-Charles",
+        "id": 17
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/0/01/S51_patt_t.png",
+        "name": "Patt Cannaday",
+        "age": "33",
+        "currentResidence": "Washington, DC",
+        "occupation": "Federal Prosecutor",
+        "pageURL": "https://survivor.fandom.com/wiki/Patt_Cannaday",
+        "id": 18
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/b/ba/S51_rob_t.png",
+        "name": "Rob Antonson",
+        "age": "40",
+        "currentResidence": "Cumberland, RI",
+        "occupation": "Airline Gate Agent",
+        "pageURL": "https://survivor.fandom.com/wiki/Rob_Antonson",
+        "id": 19
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/3/34/S51_sharonda_t.png",
+        "name": "Sharonda Cox",
+        "age": "34",
+        "currentResidence": "Richmond, KY",
+        "occupation": "Resident, OBGYN",
+        "pageURL": "https://survivor.fandom.com/wiki/Sharonda_Cox",
+        "id": 20
+    },
+    {
+        "tribeColor": "",
+        "tribe": "Unknown",
+        "iconURL": "https://static.wikia.nocookie.net/survivor/images/9/93/S51_thienan_t.png",
+        "name": "Thien An Nguyen",
+        "age": "24",
+        "currentResidence": "Fort Worth, TX",
+        "occupation": "Medical Student",
+        "pageURL": "https://survivor.fandom.com/wiki/Thien_An_Nguyen",
+        "id": 21
+    }
+]

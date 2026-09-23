@@ -7,15 +7,21 @@ import {
     BsLockFill,
     BsUnlockFill,
 } from "react-icons/bs";
-import castawayList from "../data/season_50_castaways.json";
+import castawayList from "../data/season_51_castaways.json";
 import "./CastawayList.css";
 
+const mutedGreyColors = ["#c9ced1", "#bfc5c8", "#d1d4d2", "#b8c0c3", "#d6d8d5"];
+
 export default function CastawayList() {
-    const enrichedCastawayList = castawayList.map((castaway) => {
+    const enrichedCastawayList = castawayList.map((castaway, index) => {
         const enrichedCastaway = {
             ...castaway,
             locked: false,
         };
+        if (!castaway.tribeColor) {
+            enrichedCastaway.backgroundColor =
+                mutedGreyColors[index % mutedGreyColors.length];
+        }
         return enrichedCastaway;
     });
     const [castaways, setCastaways] = useState(enrichedCastawayList);
@@ -65,7 +71,7 @@ export default function CastawayList() {
 
     return (
         <div className="castaway-list-container">
-            <h2>Season 49 Castaways</h2>
+            <h2>Season 51 Castaways</h2>
             <button
                 className="copy-button"
                 onClick={() => setCastaways(randomizeCastaways(castaways))}
@@ -95,9 +101,9 @@ export default function CastawayList() {
                                 <tbody>
                                     {castaways.map((castaway, index) => (
                                         <Draggable
-                                            draggableId={`${index}`}
+                                            draggableId={`${castaway.id}`}
                                             index={index}
-                                            key={index}
+                                            key={castaway.id}
                                         >
                                             {(provided, snapshot) => (
                                                 <tr
@@ -108,7 +114,13 @@ export default function CastawayList() {
                                                             ? "isDragging-" + snapshot.isDragging
                                                             : "bg-" + castaway.tribeColor
                                                     }
-                                                    key={index}
+                                                    style={{
+                                                        ...provided.draggableProps.style,
+                                                        ...(castaway.backgroundColor
+                                                            ? { backgroundColor: castaway.backgroundColor }
+                                                            : {}),
+                                                    }}
+                                                    key={castaway.id}
                                                 >
                                                     <td>{index + 1}</td>
                                                     <td>
@@ -152,7 +164,7 @@ export default function CastawayList() {
                         )}
                     </Droppable>
                 </div>
-            </DragDropContext>
+            </DragDropContext >
             <CopyToClipboard text={copyToClipBoard(castaways)}>
                 <div className="copy-container">
                     <button className="copy-button" onClick={() => updateButtonMessage()}>
@@ -161,7 +173,7 @@ export default function CastawayList() {
                     <span className="copy-span">{buttonMessage}</span>
                 </div>
             </CopyToClipboard>
-        </div>
+        </div >
     );
 }
 
